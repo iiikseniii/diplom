@@ -11,13 +11,12 @@ class TransactionsPage {
    * через registerEvents()
    * */
   constructor( element ) {
-    this.element = element;
-    this.registerEvents();
-    
     if(!element){
       throw new Error('Ошибка: пустой элемент');
     }
-  }
+    this.element = element;
+    this.registerEvents();
+    }
 
   /**
    * Вызывает метод render для отрисовки страницы

@@ -14,12 +14,12 @@ class AccountsWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor( element ) {
-    this.element = element;
-    this.registerEvents();
-    this.update();
     if(!element){
       throw new Error('Ошибка: пустой элемент');
     }
+    this.element = element;
+    this.registerEvents();
+    this.update();
   }
 
   /**

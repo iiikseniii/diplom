@@ -13,11 +13,11 @@ class AsyncForm {
    * через registerEvents()
    * */
   constructor(element) {
-    this.element = element;
-    this.registerEvents();
     if(!element){
       throw new Error ('Ошибка: пустой элемент');
     }
+    this.element = element;
+    this.registerEvents();
   }
 
   /**

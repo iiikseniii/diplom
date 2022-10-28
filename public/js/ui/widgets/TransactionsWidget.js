@@ -12,11 +12,11 @@ class TransactionsWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor( element ) {
-    this.element = element;
-    this.registerEvents();
-    if(!element) {
+    if(!element){
       throw new Error('Ошибка: пустой элемент');
     }
+    this.element = element;
+    this.registerEvents();
   }
   /**
    * Регистрирует обработчики нажатия на
